@@ -1,0 +1,7 @@
+n=int(input("Enter a number to check:"))
+
+#to check whether a number is even we must get remainder as 0 after dividing by two
+if(n%2==0):
+    print(n,"is even")
+else:
+    print(n,"is odd")
