@@ -1,0 +1,38 @@
+# Program to enter two numbers and print the arithmetic operations like +,-,*, /, // and %
+#Program to enter two numbers and print the arithmetic operations like +,-,*, /, // and %
+print(" 1.Addition\n 2.Subtraction\n 3.Division\n 4.Multiplication\n 5.Get Remainder\n 6.Exit") #\n is like 'enter' for programs
+c="yes"
+n=int(input("Enter your choice(1-6):"))
+while c=="yes":
+    if n==1:
+        a=int(input("Enter the first number:"))
+        b=int(input("Enter the second number:"))
+        print("Result:",(a+b))
+    elif n==2:
+        a=int(input("Enter the first number:"))
+        b=int(input("Enter the second number:"))
+        print("Result:",a-b)
+    elif n==3:
+        a=int(input("Enter the first number:"))
+        b=int(input("Enter the second number:"))
+        if b==0:
+            print("Zero division is not possible!!")
+        else:
+            print("Result:",(a/b))
+    elif n==4:
+        a=int(input("Enter the first number:"))
+        b=int(input("Enter the second number:"))
+        print("Result:",(a*b))
+    elif n==5:
+        a=int(input("Enter the first number:"))
+        b=int(input("Enter the second number:"))
+        if b==0:
+            print("Getting remainder by zero division is not possible!!")
+        else:
+            print("Result:",(a%b))
+    elif n==6:
+        print("The program is exiting...")
+        exit()
+    else:
+        print("Invalid input!!")
+    c=input("Do you want to continue?(yes/no):")
